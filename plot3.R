@@ -21,8 +21,8 @@ plot3chart<-function() {
 	  legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd=2, col=c("black", "red", "blue"))
 	}
 	
-	#function to load the PDF device and plot the chart
-plot3PDF<-function()
+	#function to load the PNG device and plot the chart
+plot3PNG<-function()
 	{
 	  png("plot3.png", width = 480, height = 480)
 	  plot3chart()
@@ -30,7 +30,7 @@ plot3PDF<-function()
 	  
 	}
 	
-	#plot to PDF
-	plot3PDF()
+	#plot to PNG
+	plot3PNG()
 	#plot to default device
 	plot3chart()

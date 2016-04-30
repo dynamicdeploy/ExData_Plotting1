@@ -20,7 +20,7 @@ plot1chart<-function()
   
 }
 
-plot1PDF<-function()
+plot1PNG<-function()
 {
   #load the PNG device
   png("plot1.png", width = 480, height = 480)
@@ -29,7 +29,7 @@ plot1PDF<-function()
   print(paste("Created chart ", plot1, sep=""))
 }
 	
-#plot to PDF
-plot1PDF()
+#plot to PNG
+plot1PNG()
 #plot to default device
 plot1chart()

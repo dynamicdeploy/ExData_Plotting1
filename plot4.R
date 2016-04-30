@@ -25,8 +25,8 @@ plot4chart<-function() {
   plot(electricpowerds$Time, electricpowerds$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global Active Power")
 }
 	
-#function to load the PDF device and plot the chart
-plot4PDF<-function()
+#function to load the PNG device and plot the chart
+plot4PNG<-function()
 {
   png("plot4.png", width = 480, height = 480)
   plot4chart()
@@ -34,8 +34,8 @@ plot4PDF<-function()
   
 }
 
-#plot to PDF
-plot4PDF()
+#plot to PNG
+plot4PNG()
 #plot to default device
 plot4chart()
 
