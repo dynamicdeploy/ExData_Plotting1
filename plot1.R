@@ -10,7 +10,7 @@ setwd("/Users/Tej/Documents/ExData_Plotting1")
 #Load the routine that was created to download the data
 source("downloaddata.R")
 
-plot1 <- paste(getwd(), "/charts/plot1.png", sep = "")
+plot1 <- paste(getwd(), "/plot1.png", sep = "")
 
  
 plot1chart<-function()
@@ -23,7 +23,7 @@ plot1chart<-function()
 plot1PDF<-function()
 {
   #load the PNG device
-  png("charts/plot1.png", width = 480, height = 480)
+  png("plot1.png", width = 480, height = 480)
   plot1chart()
   dev.off()
   print(paste("Created chart ", plot1, sep=""))

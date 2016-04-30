@@ -10,7 +10,7 @@ setwd("/Users/Tej/Documents/ExData_Plotting1")
 #Load the routine that was created to download the data
 source("downloaddata.R")
 
-plot3 <- paste(getwd(), "/charts/plot3.png", sep = "")
+plot3 <- paste(getwd(), "/plot3.png", sep = "")
 
 	#function to plot the chart
 plot3chart<-function() {	
@@ -24,7 +24,7 @@ plot3chart<-function() {
 	#function to load the PDF device and plot the chart
 plot3PDF<-function()
 	{
-	  png("charts/plot3.png", width = 480, height = 480)
+	  png("plot3.png", width = 480, height = 480)
 	  plot3chart()
 	  dev.off()
 	  

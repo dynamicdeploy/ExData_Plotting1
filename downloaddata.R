@@ -22,15 +22,7 @@ if(!file.exists(downloadfolder)){
 {
   print(paste("Folder ", downloadfolder, " already exists. Please delete.", sep=""))
 }
-#Folder name where charts will be saved
-charts <- "charts" 
-if(!file.exists(charts)){
-  print(paste("Creating folder ", charts, sep=""))
-	dir.create(charts)
-}else
-{
-  print(paste("Folder ", charts, " already exists. Please delete.", sep=""))
-}
+
 #Name of the file after downloading
 downloadarchive <- paste(getwd(), paste("/", downloadfolder, "/household_power_consumption.zip", sep = ""), sep="")
 if(!file.exists(downloadarchive)){
