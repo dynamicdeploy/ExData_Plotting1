@@ -8,7 +8,7 @@
 #Start clean by deleting all the environment variables
 rm(list=ls(all=TRUE)) 
 # Set the working directory to where the R file is and where the download and output files will be located.
-setwd("/Users/Tej/Documents/ExData_Plotting1")
+#setwd("/Users/Tej/Documents/ExData_Plotting1")
 
 library(httr) 
 #Url of the dataset
